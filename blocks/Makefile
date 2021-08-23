@@ -1,5 +1,5 @@
 VERSION=1.17.1
-OUT_BLOCKS=../docs/data/blocks.json
+OUT_BLOCKS=../docs/_data/blocks.json
 JAR_FILE=./$(VERSION).jar
 
 MUNCH=python burger/munch.py
