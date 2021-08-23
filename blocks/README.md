@@ -9,4 +9,4 @@ $ . env/bin/activate
 ```
 
 > TODO
-> 
+> Compress JSON to only the necessary attributes.
