@@ -1,3 +1,79 @@
-body {
-  background-color: beige;
+.bootstrap-select button.dropdown-toggle,
+.bootstrap-select ul.dropdown-menu a.dropdown-item {
+  padding: 6px 12px !important;
+}
+
+.block-image {
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+  border-radius: 2px;
+  border-color: darkgrey;
+  border-width: thin;
+  border-style: solid;
+  image-rendering: pixelated;
+}
+
+.bootstrap-select.normal-select {
+  width: 260px !important;
+}
+
+.bootstrap-select.block-select {
+  width: 325px !important;
+}
+
+input[type="text"] {
+  width: 175px !important;
+}
+
+input[inputmode="decimal"] {
+  font-weight: bold;
+}
+
+#main {
+  width: 550px;
+}
+
+.grouped {
+  background-color: rgb(248, 248, 248);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+}
+
+.grouped-inner {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grouped-title {
+  margin-bottom: 4px;
+}
+
+hr {
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.select-anchor {
+  display: none;
+}
+
+.framed {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 3px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  margin: .5em 0px;
+}
+
+.framed-container {
+  margin: 1em 4px;
+  padding-right: 0px;
+}
+
+.hidden {
+  display: none;
 }

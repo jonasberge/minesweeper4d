@@ -14,3 +14,49 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+blocks:
+  classes:
+    - bzp # full blocks
+    - cet # redstone block
+    - ccl # glass
+    - cgk # stained glass
+  allowed:
+    colors:
+      - glass
+      - smooth_stone
+      - green_wool
+      - yellow_wool
+      - orange_wool
+      - red_wool
+      - purple_wool
+      - light_blue_wool
+      - blue_wool
+      - black_wool
+      - brown_wool
+      - cyan_wool
+      - lime_wool
+      - pink_wool
+      - gray_wool
+      - light_gray_wool
+      - white_wool
+  defaults:
+    cover: sandstone
+    mine: glowstone
+    colors:
+      - glass
+      - lime_wool
+      - yellow_wool
+      - orange_wool
+      - red_wool
+      - purple_wool
+      - light_blue_wool
+      - blue_wool
+      - black_wool
+      - brown_wool
+      - cyan_wool
+      - green_wool
+      - pink_wool
+      - gray_wool
+      - light_gray_wool
+      - white_wool

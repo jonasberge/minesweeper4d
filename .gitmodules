@@ -4,3 +4,6 @@
 [submodule "docs/assets/vendor/bootstrap-select"]
 	path = docs/assets/vendor/bootstrap-select
 	url = https://github.com/thdoan/bootstrap-select
+[submodule "docs/assets/vendor/bootstrap-input-spinner"]
+	path = docs/assets/vendor/bootstrap-input-spinner
+	url = https://github.com/shaack/bootstrap-input-spinner

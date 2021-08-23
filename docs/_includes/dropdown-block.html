@@ -1,0 +1,41 @@
+<select title="Minecraft-Block" class="selectpicker block-select {{ include.class }}">
+  {% assign minecraft = site.data.blocks[0] %}
+  {% assign blocks = minecraft.blocks %}
+  {% for block_id in blocks.ordered_blocks %}
+    {% assign block = blocks.block[block_id] %}
+    {% if site.blocks.classes contains block.class %}
+      {% if include.allowed != null %}
+        {% unless include.allowed contains block.text_id %}
+          {% continue %}
+        {% endunless %}
+      {% endif %}
+      {% for static_file in site.static_files %}
+        {% assign path = block.text_id | prepend: '/' | append: '.png' %}
+        {% if static_file.path contains path %}
+          <option data-thumbnail="textures/block/{{ block.text_id }}.png"
+            data-id="{{ block.text_id }}">{{ block.display_name }}</option>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</select>
+
+<script>
+  // https://gist.github.com/nfreear/74fdad45a1a77c19132cc2e65685220a
+  (function () {
+    const $select = $('.{{ include.class }}');
+    $select.find('option').each((idx, element) => {
+      const $option = $(element);
+      const href = $option.attr('data-thumbnail');
+      if (href) {
+        const img = document.createElement('img');
+        img.className = 'block-image';
+        img.src = href;
+        $option.attr('data-content', img.outerHTML + $option.text())
+      }
+    });
+    // $select.val('{{ blocks.block[include.default].display_name }}');
+    // $select.selectpicker("render");
+  })();
+</script>
