@@ -1,3 +1,6 @@
 [submodule "blocks/burger"]
 	path = blocks/burger
 	url = https://github.com/vonas/Burger
+[submodule "docs/assets/vendor/bootstrap-select"]
+	path = docs/assets/vendor/bootstrap-select
+	url = https://github.com/thdoan/bootstrap-select
