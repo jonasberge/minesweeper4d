@@ -7,6 +7,7 @@ url: https://vonas.github.io
 baseurl: /minesweeper4d
 
 assets: assets
+theme: null
 
 defaults:
   - scope:
