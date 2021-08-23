@@ -1,0 +1,3 @@
+[submodule "blocks/burger"]
+	path = blocks/burger
+	url = https://github.com/vonas/Burger

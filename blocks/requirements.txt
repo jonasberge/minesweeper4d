@@ -1,0 +1,4 @@
+click==8.0.1
+jawa==2.2.0
+simplejson==3.17.4
+six==1.16.0
